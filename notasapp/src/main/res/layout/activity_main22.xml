@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.prieto.william.notasapp.Main22Activity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        style="@style/textViewStyle.grande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/porcentaje"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_weight="0.09" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textViewStyle.peque"
+            android:text="@string/exposiciones"
+            android:id="@+id/ptE"/>
+        <EditText
+            style="@style/editTextStyle"
+            android:id="@+id/epExp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textViewStyle.peque"
+            android:text="@string/practicas"
+            android:layout_width="154dp" />
+        <EditText
+            style="@style/editTextStyle"
+            android:id="@+id/epPrac"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textViewStyle.peque"
+            android:text="@string/proyecto"
+            android:layout_width="154dp" />
+        <EditText
+            style="@style/editTextStyle"
+            android:id="@+id/epProy"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/limpiar"
+        android:id="@+id/blimpiar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:id="@+id/bguardar"/>
+
+</LinearLayout>

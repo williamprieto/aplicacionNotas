@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/textViewStyle.grande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        style="@style/textViewStyle.peque"
+                        android:text="@string/exposiciones"
+                        android:id="@+id/tE"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:id="@+id/tExpo"
+                        />
+                    <TextView
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
+                        android:hint="%"
+                        android:gravity="center"
+                        />
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:id="@+id/eExp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        style="@style/textViewStyle.peque"
+                        android:text="@string/practicas"
+                        android:layout_width="153dp" />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/tPrac"
+                        />
+                    <TextView
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
+                        android:hint="%"
+                        android:gravity="center"
+                        />
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:id="@+id/ePrac"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/textViewStyle.peque"
+                        android:layout_width="153dp"
+                        android:text="@string/proyecto"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/tProy"
+                        />
+                    <TextView
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
+                        android:hint="%"
+                        android:gravity="center"
+                        />
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:id="@+id/eProy"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Limpiar"
+                        android:id="@+id/blimpiar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="calcular"
+                    android:id="@+id/bcalcular"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    style="@style/textViewStyle.peque"
+                    android:text="@string/notafinal"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/notafinal"
+                    android:enabled="false"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:id="@+id/eNotaF"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
